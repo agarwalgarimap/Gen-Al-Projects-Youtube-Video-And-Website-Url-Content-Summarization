@@ -41,7 +41,6 @@ if st.button("Summarize the Content from YT or Website"):
                         docs = loader.load()
                     except Exception as e:
                         st.error(f"An error occurred while accessing the YouTube video: {e}")
-                        return  # Exit the function if there's an error
                 else:
                     loader = UnstructuredURLLoader(urls=[generic_url], ssl_verify=False,
                                                     headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"})
@@ -54,6 +53,4 @@ if st.button("Summarize the Content from YT or Website"):
                 st.success(output_summary)
         except Exception as e:
             st.exception(f"Exception: {e}")
-
-            st.exception(e)
 
