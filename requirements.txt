@@ -31,9 +31,5 @@ pytube
 numexpr
 huggingface_hub
 streamlit==1.24.0
-langchain==0.0.200
-langchain-groq==0.0.5
-langchain-community==0.0.3
-validators==0.20.0
 pytube==12.1.0
 yt-dlp==2024.1.1
